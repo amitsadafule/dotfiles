@@ -99,6 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-ZSH_THEME="powerlevel10k/powerlevel10k"
-source "/opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+#ZSH_THEME="powerlevel10k/powerlevel10k"
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 
